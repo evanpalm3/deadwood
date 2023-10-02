@@ -1,0 +1,25 @@
+ - CardParser class
+     + Parse cards.xml
+     + Create a list of Card objects
+ - SetParser class
+     + Parse board.xml
+     + Create a list of Set objects
+ - Deadwood class
+     + Main class that starts the game
+     + Read number of players from command line, if given
+     + Initialize view
+ - Player class
+     + Contains credits, dollars, position, rank, currentRole, practiceChips
+ - Set class
+     + Contains name, neighbors, area, blankAreas
+ - SetScene class
+     + Contains takes, roles, sceneCard
+ - Area class
+     + Contains coordinates, size
+ - Role class
+     + Contains name, level, line, area
+ - Dice class
+     + Roll a six sided die
+     + Contains a number 1-6
+ - Card class
+     + Contains name, imageName, sceneNumber, budget, roles

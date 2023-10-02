@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>320</x><y>100</y><w>210</w><h>70</h></coordinates><panel_attributes>_CardParser_
+--
++ cards : List&lt;Card&gt;
+--
++ parse() : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>370</y><w>210</w><h>70</h></coordinates><panel_attributes>_SetParser_
+--
++ sets : List&lt;Set&gt;
+--
++ parse() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>90</y><w>210</w><h>100</h></coordinates><panel_attributes>_Deadwood_
+--
+- players : List&lt;Player&gt;
+--
++ readNumPlayers() : void
++ initializeView() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>280</y><w>210</w><h>160</h></coordinates><panel_attributes>_Player_
+--
++ credits : int
++ dollars : int
++ position : int
++ rank : int
++ currentRole : Role
++ practiceChips : int
+--
++ score() : int
++ payPlayer(int) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>590</y><w>210</w><h>110</h></coordinates><panel_attributes>_Set_
+--
++ getName() : String
++ getLevel() : int
++ getLine() : String
++ getArea() : Area</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>730</y><w>210</w><h>90</h></coordinates><panel_attributes>_SetScene_
+--
++ getTakes() : List&lt;Area&gt;
++ getRoles() : List&lt;Role&gt;
++ getSceneCard() : Card</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>580</y><w>210</w><h>90</h></coordinates><panel_attributes>_Area_
+--
++ x : int
++ y : int
++ w : int
++ h : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>550</y><w>210</w><h>100</h></coordinates><panel_attributes>_Role_
+--
++ name : String
++ level : int
++ line : String
++ area : Area</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1130</x><y>140</y><w>210</w><h>90</h></coordinates><panel_attributes>_Dice_
+--
+- number : int
+--
++ getNumber() : int
++ roll() : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>160</y><w>60</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;210</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>90</y><w>280</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>260;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>150</y><w>120</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>690</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>590</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>660</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>310</y><w>210</w><h>130</h></coordinates><panel_attributes>_Card_
+--
+ + getName() : String
+ + getImageName() : String
+ + getSceneNumber() : int
+ + getBudget() : int
+ + getRoles() : List&lt;Role&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>160</y><w>220</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>200;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>430</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>430</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>600</y><w>340</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>430</y><w>330</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>130</y><w>170</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>180</y><w>160</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>430</y><w>140</w><h>320</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;120;300</additional_attributes></element></diagram>
